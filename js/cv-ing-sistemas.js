@@ -120,7 +120,6 @@ btnGenerarSistemas.addEventListener('click', () => {
   recSistemas.innerHTML = htmlRec;
 });
 
-// Botón PDF
 btnPDFSistemas.addEventListener('click', () => {
   printCV('cv-ing-sistemas');
 });
