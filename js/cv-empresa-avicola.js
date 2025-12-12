@@ -56,7 +56,7 @@ btnGenerarAvicola.addEventListener('click', () => {
     datos.educacion?.trim() || 'Indica tu formación principal y cursos en producción animal o inocuidad.';
 
   const cert = datos.certificaciones?.trim();
-  const certSection = document.getElementById('cv-certificaciones-section-avicola');
+  const certSection = document.getElementById('cv-certificaciones-side-avicola');
   const certText = document.getElementById('cv-certificaciones-avicola');
 
   if (cert) {

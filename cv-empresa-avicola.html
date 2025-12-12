@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>CV para empresa avícola</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -98,53 +98,65 @@
       <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
       <div id="panel-cv-avicola" class="cv-panel">
         <div class="cv-wrapper">
-          <div id="cv-avicola" class="cv">
-            <div class="cv-header">
+          <div id="cv-avicola" class="cv cv-structured">
+            <div class="cv-header cv-header-2col">
               <div class="cv-name" id="cv-nombre-avicola">Nombre Apellido</div>
               <div class="cv-title" id="cv-puesto-avicola">Puesto en empresa avícola</div>
-              <div class="cv-contact" id="cv-contacto-avicola">
-                Ciudad, País | Teléfono | Email
-              </div>
             </div>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Perfil profesional</div>
-              <div class="cv-text cv-multiline" id="cv-perfil-avicola">
-                Resumen breve de tu experiencia en producción avícola y bioseguridad.
-              </div>
-            </div>
+            <div class="cv-body-2col">
+              <!-- Columna izquierda -->
+              <aside class="cv-sidebar">
+                <section class="cv-side-section">
+                  <div class="cv-side-title">Contacto</div>
+                  <div class="cv-side-text" id="cv-contacto-avicola">
+                    Ciudad, País | Teléfono | Email
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Experiencia avícola</div>
-              <div class="cv-text cv-multiline" id="cv-experiencia-avicola">
-                Describe tu experiencia en granjas, plantas de proceso y manejo de lotes.
-              </div>
-            </div>
+                <section class="cv-side-section">
+                  <div class="cv-side-title">Conocimientos y normas</div>
+                  <div class="cv-side-text cv-multiline" id="cv-habilidades-avicola">
+                    Bioseguridad, bienestar animal, HACCP, BPM, entre otros.
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Logros e indicadores</div>
-              <div class="cv-text cv-multiline" id="cv-logros-avicola">
-                Mejora de indicadores productivos y sanitarios.
-              </div>
-            </div>
+                <section class="cv-side-section" id="cv-certificaciones-side-avicola" style="display:none;">
+                  <div class="cv-side-title">Certificaciones</div>
+                  <div class="cv-side-text cv-multiline" id="cv-certificaciones-avicola"></div>
+                </section>
+              </aside>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Conocimientos y normas</div>
-              <div class="cv-text cv-multiline" id="cv-habilidades-avicola">
-                Bioseguridad, bienestar animal, HACCP, BPM, entre otros.
-              </div>
-            </div>
+              <!-- Columna derecha -->
+              <section class="cv-main">
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Resumen</div>
+                  <div class="cv-text cv-multiline" id="cv-perfil-avicola">
+                    Resumen breve de tu experiencia en producción avícola y bioseguridad.
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Educación / formación</div>
-              <div class="cv-text cv-multiline" id="cv-educacion-avicola">
-                Tu formación académica principal.
-              </div>
-            </div>
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Experiencia avícola</div>
+                  <div class="cv-text cv-multiline" id="cv-experiencia-avicola">
+                    Describe tu experiencia en granjas, plantas de proceso y manejo de lotes.
+                  </div>
+                </section>
 
-            <div class="cv-section" id="cv-certificaciones-section-avicola" style="display:none;">
-              <div class="cv-section-title">Certificaciones</div>
-              <div class="cv-text cv-multiline" id="cv-certificaciones-avicola"></div>
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Logros e indicadores</div>
+                  <div class="cv-text cv-multiline" id="cv-logros-avicola">
+                    Mejora de indicadores productivos y sanitarios.
+                  </div>
+                </section>
+
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Educación / formación</div>
+                  <div class="cv-text cv-multiline" id="cv-educacion-avicola">
+                    Tu formación académica principal.
+                  </div>
+                </section>
+              </section>
             </div>
           </div>
         </div>

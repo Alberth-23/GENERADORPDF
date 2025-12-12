@@ -56,7 +56,7 @@ btnGenerarContabilidad.addEventListener('click', () => {
     datos.educacion?.trim() || 'Indica tu formación en Contabilidad, colegiatura y diplomados relevantes.';
 
   const cert = datos.certificaciones?.trim();
-  const certSection = document.getElementById('cv-certificaciones-section-contabilidad');
+  const certSection = document.getElementById('cv-certificaciones-side-contabilidad');
   const certText = document.getElementById('cv-certificaciones-contabilidad');
 
   if (cert) {

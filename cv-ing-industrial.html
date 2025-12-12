@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>CV Ingeniero Industrial</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -98,53 +98,65 @@
       <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
       <div id="panel-cv-industrial" class="cv-panel">
         <div class="cv-wrapper">
-          <div id="cv-ing-industrial" class="cv">
-            <div class="cv-header">
+          <div id="cv-ing-industrial" class="cv cv-structured">
+            <div class="cv-header cv-header-2col">
               <div class="cv-name" id="cv-nombre-industrial">Nombre Apellido</div>
               <div class="cv-title" id="cv-puesto-industrial">Ingeniero Industrial</div>
-              <div class="cv-contact" id="cv-contacto-industrial">
-                Ciudad, País | Teléfono | Email
-              </div>
             </div>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Perfil profesional</div>
-              <div class="cv-text cv-multiline" id="cv-perfil-industrial">
-                Resumen breve de tu experiencia en procesos, mejora continua y operaciones.
-              </div>
-            </div>
+            <div class="cv-body-2col">
+              <!-- Columna izquierda -->
+              <aside class="cv-sidebar">
+                <section class="cv-side-section">
+                  <div class="cv-side-title">Contacto</div>
+                  <div class="cv-side-text" id="cv-contacto-industrial">
+                    Ciudad, País | Teléfono | Email
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Experiencia profesional</div>
-              <div class="cv-text cv-multiline" id="cv-experiencia-industrial">
-                Describe aquí tus experiencias más relevantes en plantas, logística y operaciones.
-              </div>
-            </div>
+                <section class="cv-side-section">
+                  <div class="cv-side-title">Herramientas y metodologías</div>
+                  <div class="cv-side-text cv-multiline" id="cv-herramientas-industrial">
+                    Lean, Six Sigma, 5S, VSM, ERPs, Excel avanzado, entre otras.
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Logros y mejora continua</div>
-              <div class="cv-text cv-multiline" id="cv-logros-industrial">
-                Proyectos de mejora, ahorro de costos, reducción de tiempos y aumento de productividad.
-              </div>
-            </div>
+                <section class="cv-side-section" id="cv-certificaciones-side-industrial" style="display:none;">
+                  <div class="cv-side-title">Certificaciones</div>
+                  <div class="cv-side-text cv-multiline" id="cv-certificaciones-industrial"></div>
+                </section>
+              </aside>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Herramientas y metodologías</div>
-              <div class="cv-text cv-multiline" id="cv-herramientas-industrial">
-                Lean, Six Sigma, 5S, VSM, ERPs, Excel avanzado, entre otras.
-              </div>
-            </div>
+              <!-- Columna derecha -->
+              <section class="cv-main">
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Resumen</div>
+                  <div class="cv-text cv-multiline" id="cv-perfil-industrial">
+                    Resumen breve de tu experiencia en procesos, mejora continua y operaciones.
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Educación</div>
-              <div class="cv-text cv-multiline" id="cv-educacion-industrial">
-                Tu formación académica principal.
-              </div>
-            </div>
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Experiencia profesional</div>
+                  <div class="cv-text cv-multiline" id="cv-experiencia-industrial">
+                    Describe aquí tus experiencias más relevantes en plantas, logística y operaciones.
+                  </div>
+                </section>
 
-            <div class="cv-section" id="cv-certificaciones-section-industrial" style="display:none;">
-              <div class="cv-section-title">Certificaciones</div>
-              <div class="cv-text cv-multiline" id="cv-certificaciones-industrial"></div>
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Logros y mejora continua</div>
+                  <div class="cv-text cv-multiline" id="cv-logros-industrial">
+                    Proyectos de mejora, ahorro de costos, reducción de tiempos y aumento de productividad.
+                  </div>
+                </section>
+
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Educación</div>
+                  <div class="cv-text cv-multiline" id="cv-educacion-industrial">
+                    Tu formación académica principal.
+                  </div>
+                </section>
+              </section>
             </div>
           </div>
         </div>

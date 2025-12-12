@@ -354,7 +354,7 @@ select:focus {
   color: #111827;
 }
 
-/* Cabecera del CV estilo profesional */
+/* Cabecera por defecto (no usada ahora, pero queda por compatibilidad) */
 .cv-header {
   border-bottom: 1px solid #e5e7eb;
   padding-bottom: 0.9rem;
@@ -385,7 +385,6 @@ select:focus {
   color: #4b5563;
 }
 
-/* Secciones del CV */
 .cv-section {
   margin-bottom: 0.85rem;
 }
@@ -409,6 +408,82 @@ select:focus {
 
 .cv-multiline {
   white-space: pre-line;
+}
+
+/* ====== LAYOUT CV ESTILO 2 COLUMNAS (TIPO PLANTILLA PROFESIONAL) ====== */
+
+.cv-structured {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cabecera centrada tipo ejemplo */
+.cv-header-2col {
+  border-bottom: none;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.cv-header-2col .cv-name {
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.cv-header-2col .cv-title {
+  letter-spacing: 0.12em;
+}
+
+/* Cuerpo a dos columnas */
+.cv-body-2col {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  column-gap: 1.2rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+/* Columna izquierda (sidebar) */
+.cv-sidebar {
+  border-right: 1px solid #e5e7eb;
+  padding-right: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Columna derecha (contenido principal) */
+.cv-main {
+  padding-left: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Secciones de la columna izquierda */
+.cv-side-section {
+  margin-bottom: 0.3rem;
+}
+
+.cv-side-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4b5563;
+  margin-bottom: 0.2rem;
+}
+
+.cv-side-text {
+  font-size: 0.8rem;
+  color: #374151;
+  white-space: pre-line;
+}
+
+/* Ajuste en las secciones de la derecha */
+.cv-main-section .cv-section-title {
+  margin-bottom: 0.2rem;
 }
 
 /* ====== RECOMENDACIONES ====== */
@@ -465,9 +540,31 @@ select:focus {
   .cv-wrapper {
     margin-top: 0.4rem;
   }
+
+  .cv-body-2col {
+    grid-template-columns: 1fr;
+    border-top: none;
+  }
+
+  .cv-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding-right: 0;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .cv-main {
+    padding-left: 0;
+  }
 }
 
 /* ====== IMPRESIÓN (PDF) ====== */
+@page {
+  size: A4;
+  margin: 1.5cm;
+}
+
 @media print {
   body * {
     visibility: hidden;
@@ -486,6 +583,7 @@ select:focus {
     width: 100%;
     box-shadow: none;
     border: none;
+    padding: 0;
   }
 
   body {

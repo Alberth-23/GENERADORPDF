@@ -84,7 +84,7 @@ btnGenerarMango.addEventListener('click', () => {
     datos.educacion?.trim() || educacionDefault;
 
   const cert = datos.certificaciones?.trim();
-  const certSection = document.getElementById('cv-certificaciones-section-mango');
+  const certSection = document.getElementById('cv-certificaciones-side-mango');
   const certText = document.getElementById('cv-certificaciones-mango');
 
   if (cert) {

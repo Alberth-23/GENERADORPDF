@@ -1,6 +1,5 @@
 // js/cv-ing-sistemas.js
 
-// Función genérica para imprimir solo este CV
 function printCV(cvId) {
   const cv = document.getElementById(cvId);
   if (!cv) return;
@@ -59,7 +58,7 @@ btnGenerarSistemas.addEventListener('click', () => {
     datos.educacion?.trim() || 'Indica tu formación principal, institución y años de estudio.';
 
   const cert = datos.certificaciones?.trim();
-  const certSection = document.getElementById('cv-certificaciones-section-sistemas');
+  const certSection = document.getElementById('cv-certificaciones-side-sistemas');
   const certText = document.getElementById('cv-certificaciones-sistemas');
 
   if (cert) {

@@ -56,7 +56,7 @@ btnGenerarIndustrial.addEventListener('click', () => {
     datos.educacion?.trim() || 'Indica tu formación principal, institución y años de estudio.';
 
   const cert = datos.certificaciones?.trim();
-  const certSection = document.getElementById('cv-certificaciones-section-industrial');
+  const certSection = document.getElementById('cv-certificaciones-side-industrial');
   const certText = document.getElementById('cv-certificaciones-industrial');
 
   if (cert) {

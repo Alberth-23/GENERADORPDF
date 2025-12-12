@@ -1,11 +1,10 @@
-<!-- archivo: cv-ing-sistemas.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <title>CV Ingeniero de Sistemas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -100,53 +99,67 @@
       <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
       <div id="panel-cv-sistemas" class="cv-panel">
         <div class="cv-wrapper">
-          <div id="cv-ing-sistemas" class="cv">
-            <div class="cv-header">
+          <div id="cv-ing-sistemas" class="cv cv-structured">
+            <!-- Cabecera centrada -->
+            <div class="cv-header cv-header-2col">
               <div class="cv-name" id="cv-nombre-sistemas">Nombre Apellido</div>
               <div class="cv-title" id="cv-puesto-sistemas">Ingeniero de Sistemas</div>
-              <div class="cv-contact" id="cv-contacto-sistemas">
-                Ciudad, País | Teléfono | Email
-              </div>
             </div>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Perfil profesional</div>
-              <div class="cv-text cv-multiline" id="cv-perfil-sistemas">
-                Resumen breve de tu experiencia, tecnologías clave y tipo de puestos que buscas.
-              </div>
-            </div>
+            <!-- Cuerpo 2 columnas -->
+            <div class="cv-body-2col">
+              <!-- Columna izquierda -->
+              <aside class="cv-sidebar">
+                <section class="cv-side-section">
+                  <div class="cv-side-title">Contacto</div>
+                  <div class="cv-side-text" id="cv-contacto-sistemas">
+                    Ciudad, País | Teléfono | Email
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Experiencia</div>
-              <div class="cv-text cv-multiline" id="cv-experiencia-sistemas">
-                Describe aquí tus experiencias más relevantes.
-              </div>
-            </div>
+                <section class="cv-side-section">
+                  <div class="cv-side-title">Habilidades técnicas</div>
+                  <div class="cv-side-text cv-multiline" id="cv-habilidades-sistemas">
+                    Lenguajes, frameworks, bases de datos, herramientas, metodologías ágiles, etc.
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Proyectos destacados</div>
-              <div class="cv-text cv-multiline" id="cv-proyectos-sistemas">
-                Incluye proyectos personales o académicos que refuercen tu perfil técnico.
-              </div>
-            </div>
+                <section class="cv-side-section" id="cv-certificaciones-side-sistemas" style="display:none;">
+                  <div class="cv-side-title">Certificaciones</div>
+                  <div class="cv-side-text cv-multiline" id="cv-certificaciones-sistemas"></div>
+                </section>
+              </aside>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Habilidades técnicas</div>
-              <div class="cv-text cv-multiline" id="cv-habilidades-sistemas">
-                Lenguajes, frameworks, bases de datos, herramientas, metodologías ágiles, etc.
-              </div>
-            </div>
+              <!-- Columna derecha -->
+              <section class="cv-main">
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Resumen</div>
+                  <div class="cv-text cv-multiline" id="cv-perfil-sistemas">
+                    Resumen breve de tu experiencia, tecnologías clave y tipo de puestos que buscas.
+                  </div>
+                </section>
 
-            <div class="cv-section">
-              <div class="cv-section-title">Educación</div>
-              <div class="cv-text cv-multiline" id="cv-educacion-sistemas">
-                Tu formación académica principal.
-              </div>
-            </div>
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Experiencia</div>
+                  <div class="cv-text cv-multiline" id="cv-experiencia-sistemas">
+                    Describe aquí tus experiencias más relevantes.
+                  </div>
+                </section>
 
-            <div class="cv-section" id="cv-certificaciones-section-sistemas" style="display:none;">
-              <div class="cv-section-title">Certificaciones</div>
-              <div class="cv-text cv-multiline" id="cv-certificaciones-sistemas"></div>
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Proyectos destacados</div>
+                  <div class="cv-text cv-multiline" id="cv-proyectos-sistemas">
+                    Incluye proyectos personales o académicos que refuercen tu perfil técnico.
+                  </div>
+                </section>
+
+                <section class="cv-main-section">
+                  <div class="cv-section-title">Educación</div>
+                  <div class="cv-text cv-multiline" id="cv-educacion-sistemas">
+                    Tu formación académica principal.
+                  </div>
+                </section>
+              </section>
             </div>
           </div>
         </div>
