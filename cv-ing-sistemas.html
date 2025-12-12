@@ -1,0 +1,175 @@
+<!-- archivo: cv-ing-sistemas.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV Ingeniero de Sistemas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">Generador de CV — Ingeniero de Sistemas</div>
+    <a href="index.html" class="topbar-link">Volver al inicio</a>
+  </div>
+</header>
+
+<main class="content">
+  <section>
+    <h2>CV para Ingeniero de Sistemas</h2>
+    <p style="color:#4b5563; font-size:0.9rem;">
+      Completa esta encuesta orientada a puestos de desarrollo de software, análisis de sistemas,
+      soporte técnico avanzado, DevOps u otros roles de TI. Luego genera tu CV y descárgalo en PDF.
+    </p>
+
+    <div class="two-column-layout">
+      <!-- FORMULARIO -->
+      <div class="form-panel">
+        <form id="form-ing-sistemas">
+          <h3 style="margin-bottom:0.8rem;">Datos principales</h3>
+
+          <div class="form-group">
+            <label for="nombre-sistemas">Nombre completo</label>
+            <input type="text" id="nombre-sistemas" name="nombre" placeholder="Ej: Juan Pérez Ramírez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="puesto-sistemas">Puesto objetivo</label>
+            <input type="text" id="puesto-sistemas" name="puesto" value="Ingeniero de Sistemas" />
+            <div class="helper-text">Puedes ajustarlo, ej: Desarrollador Backend, DevOps Engineer, etc.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="ciudad-sistemas">Ciudad y país</label>
+            <input type="text" id="ciudad-sistemas" name="ciudad" placeholder="Ej: Lima, Perú">
+          </div>
+
+          <div class="form-group">
+            <label for="email-sistemas">Correo electrónico</label>
+            <input type="email" id="email-sistemas" name="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono-sistemas">Teléfono</label>
+            <input type="tel" id="telefono-sistemas" name="telefono" placeholder="+51 999 999 999">
+          </div>
+
+          <hr style="margin:1rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+          <h3 style="margin-bottom:0.8rem;">Perfil y experiencia</h3>
+
+          <div class="form-group">
+            <label for="perfil-sistemas">Perfil profesional (resumen)</label>
+            <textarea id="perfil-sistemas" name="perfil" placeholder="Ej: Ingeniero de Sistemas con X años de experiencia en desarrollo web, APIs REST y bases de datos..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="experiencia-sistemas">Experiencia relevante</label>
+            <textarea id="experiencia-sistemas" name="experiencia" placeholder="Describe tus últimos 2–3 puestos, logros, tecnologías usadas, resultados, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="proyectos-sistemas">Proyectos destacados</label>
+            <textarea id="proyectos-sistemas" name="proyectos" placeholder="Incluye proyectos personales, académicos o laborales: qué hiciste, con qué tecnologías y qué se logró."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="habilidades-sistemas">Habilidades técnicas</label>
+            <textarea id="habilidades-sistemas" name="habilidades" placeholder="Ej: Java, Spring Boot, JavaScript, React, SQL, Git, Docker, Linux, AWS, Scrum"></textarea>
+            <div class="helper-text">Separa por comas o saltos de línea.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="educacion-sistemas">Educación</label>
+            <textarea id="educacion-sistemas" name="educacion" placeholder="Carrera, universidad, años, cursos relevantes, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="certificaciones-sistemas">Certificaciones (opcional)</label>
+            <textarea id="certificaciones-sistemas" name="certificaciones" placeholder="Ej: Scrum Master, AWS Cloud Practitioner, Cisco CCNA, etc."></textarea>
+          </div>
+
+          <button type="button" id="btn-generar-sistemas" class="btn btn-primary">
+            Generar CV
+          </button>
+        </form>
+      </div>
+
+      <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
+      <div id="panel-cv-sistemas" class="cv-panel">
+        <div class="cv-wrapper">
+          <div id="cv-ing-sistemas" class="cv">
+            <div class="cv-header">
+              <div class="cv-name" id="cv-nombre-sistemas">Nombre Apellido</div>
+              <div class="cv-title" id="cv-puesto-sistemas">Ingeniero de Sistemas</div>
+              <div class="cv-contact" id="cv-contacto-sistemas">
+                Ciudad, País | Teléfono | Email
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Perfil profesional</div>
+              <div class="cv-text cv-multiline" id="cv-perfil-sistemas">
+                Resumen breve de tu experiencia, tecnologías clave y tipo de puestos que buscas.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Experiencia</div>
+              <div class="cv-text cv-multiline" id="cv-experiencia-sistemas">
+                Describe aquí tus experiencias más relevantes.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Proyectos destacados</div>
+              <div class="cv-text cv-multiline" id="cv-proyectos-sistemas">
+                Incluye proyectos personales o académicos que refuercen tu perfil técnico.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Habilidades técnicas</div>
+              <div class="cv-text cv-multiline" id="cv-habilidades-sistemas">
+                Lenguajes, frameworks, bases de datos, herramientas, metodologías ágiles, etc.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Educación</div>
+              <div class="cv-text cv-multiline" id="cv-educacion-sistemas">
+                Tu formación académica principal.
+              </div>
+            </div>
+
+            <div class="cv-section" id="cv-certificaciones-section-sistemas" style="display:none;">
+              <div class="cv-section-title">Certificaciones</div>
+              <div class="cv-text cv-multiline" id="cv-certificaciones-sistemas"></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" id="btn-pdf-sistemas" class="btn btn-secondary">
+            Descargar CV en PDF
+          </button>
+        </div>
+
+        <section class="recommendations">
+          <h3>Recomendaciones para conseguir el puesto más rápido</h3>
+          <div id="recomendaciones-sistemas">
+            <ul>
+              <li>Aquí aparecerán recomendaciones personalizadas según lo que completes en el formulario.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/cv-ing-sistemas.js"></script>
+</body>
+</html>

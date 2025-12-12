@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV para empresa de mango</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">Generador de CV — Empresa de mango</div>
+    <a href="index.html" class="topbar-link">Volver al inicio</a>
+  </div>
+</header>
+
+<main class="content">
+  <section>
+    <h2>CV para empresa de mango (agroexportadora)</h2>
+    <p style="color:#4b5563; font-size:0.9rem;">
+      Diseñado para dos tipos de puestos en agroindustria de mango:
+      <strong>profesionales/técnicos</strong> (supervisores, jefes, coordinadores)
+      y <strong>operarios/peones</strong> (cosecha, selección, embalaje, etc.).
+      Elige tu tipo de puesto y completa la información.
+    </p>
+
+    <div class="two-column-layout">
+      <!-- FORMULARIO -->
+      <div class="form-panel">
+        <form id="form-mango">
+          <h3 style="margin-bottom:0.8rem;">Datos principales</h3>
+
+          <div class="form-group">
+            <label for="nombre-mango">Nombre completo</label>
+            <input type="text" id="nombre-mango" name="nombre" placeholder="Ej: Luis Torres Rojas" required>
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-mango">Tipo de puesto en empresa de mango</label>
+            <select id="tipo-mango" name="tipo">
+              <option value="profesional" selected>
+                Puesto profesional / técnico (supervisor, jefe, coordinador, etc.)
+              </option>
+              <option value="operario">
+                Puesto operario / peón (cosecha, selección, embalaje, etc.)
+              </option>
+            </select>
+            <div class="helper-text">
+              Selecciona si postulas a un cargo profesional/técnico o a un puesto de operario/peón.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="puesto-mango">Puesto objetivo</label>
+            <input type="text" id="puesto-mango" name="puesto" value="Puesto en empresa de mango" />
+            <div class="helper-text">
+              Puedes especificar: Supervisor de producción, Operario de selección, Jefe de calidad, etc.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="ciudad-mango">Ciudad y país</label>
+            <input type="text" id="ciudad-mango" name="ciudad" placeholder="Ej: Piura, Perú">
+          </div>
+
+          <div class="form-group">
+            <label for="email-mango">Correo electrónico</label>
+            <input type="email" id="email-mango" name="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono-mango">Teléfono</label>
+            <input type="tel" id="telefono-mango" name="telefono" placeholder="+51 999 999 999">
+          </div>
+
+          <hr style="margin:1rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+          <h3 style="margin-bottom:0.8rem;">Perfil y experiencia</h3>
+
+          <div class="form-group">
+            <label for="perfil-mango">Perfil / presentación</label>
+            <textarea id="perfil-mango" name="perfil" placeholder="Ej: Profesional/operario con experiencia en agroindustria de mango, manejo de packing, cosecha, selección o exportaciones..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="experiencia-mango">Experiencia en agroindustria de mango</label>
+            <textarea id="experiencia-mango" name="experiencia" placeholder="Describe tu experiencia en campo, packing, plantas de procesamiento, calidad o logística, según el tipo de puesto."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="logros-mango">Logros y resultados</label>
+            <textarea id="logros-mango" name="logros" placeholder="Ej: Incremento de rendimiento, reducción de mermas, cumplimiento de metas de producción, puntualidad, buen desempeño en campañas, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="habilidades-mango">Conocimientos y habilidades</label>
+            <textarea id="habilidades-mango" name="habilidades" placeholder="Para profesionales: normas (GlobalG.A.P, HACCP, BRC). Para operarios: responsabilidad, trabajo en equipo, cuidado del producto, resistencia física, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="educacion-mango">Educación / formación</label>
+            <textarea id="educacion-mango" name="educacion" placeholder="Profesionales: carreras técnicas/universitarias. Operarios: secundaria completa u otros estudios relevantes."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="certificaciones-mango">Certificaciones (opcional)</label>
+            <textarea id="certificaciones-mango" name="certificaciones" placeholder="Ej: Certificaciones en calidad, inocuidad, normas agrícolas, cursos de seguridad, etc."></textarea>
+          </div>
+
+          <button type="button" id="btn-generar-mango" class="btn btn-primary">
+            Generar CV
+          </button>
+        </form>
+      </div>
+
+      <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
+      <div id="panel-cv-mango" class="cv-panel">
+        <div class="cv-wrapper">
+          <div id="cv-mango" class="cv">
+            <div class="cv-header">
+              <div class="cv-name" id="cv-nombre-mango">Nombre Apellido</div>
+              <div class="cv-title" id="cv-puesto-mango">Puesto en empresa de mango</div>
+              <div class="cv-contact" id="cv-contacto-mango">
+                Ciudad, País | Teléfono | Email
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Perfil / presentación</div>
+              <div class="cv-text cv-multiline" id="cv-perfil-mango">
+                Resumen breve de tu experiencia o motivación para trabajar en empresa de mango.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Experiencia en agroindustria</div>
+              <div class="cv-text cv-multiline" id="cv-experiencia-mango">
+                Describe aquí tu experiencia en campo, packing, plantas de proceso y logística.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Logros y resultados</div>
+              <div class="cv-text cv-multiline" id="cv-logros-mango">
+                Proyectos y logros relacionados con rendimiento, calidad y producción.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Conocimientos y habilidades</div>
+              <div class="cv-text cv-multiline" id="cv-habilidades-mango">
+                Normas de calidad o habilidades prácticas para el trabajo en campo/packing.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Educación / formación</div>
+              <div class="cv-text cv-multiline" id="cv-educacion-mango">
+                Tu formación académica principal.
+              </div>
+            </div>
+
+            <div class="cv-section" id="cv-certificaciones-section-mango" style="display:none;">
+              <div class="cv-section-title">Certificaciones</div>
+              <div class="cv-text cv-multiline" id="cv-certificaciones-mango"></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" id="btn-pdf-mango" class="btn btn-secondary">
+            Descargar CV en PDF
+          </button>
+        </div>
+
+        <section class="recommendations">
+          <h3>Recomendaciones para conseguir el puesto más rápido</h3>
+          <div id="recomendaciones-mango">
+            <ul>
+              <li>Aquí aparecerán recomendaciones personalizadas según lo que completes en el formulario.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/cv-empresa-mango.js"></script>
+</body>
+</html>

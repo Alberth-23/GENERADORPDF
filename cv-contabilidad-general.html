@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV Contabilidad General</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">Generador de CV — Contabilidad General</div>
+    <a href="index.html" class="topbar-link">Volver al inicio</a>
+  </div>
+</header>
+
+<main class="content">
+  <section>
+    <h2>CV para Contabilidad General</h2>
+    <p style="color:#4b5563; font-size:0.9rem;">
+      Orientado a puestos de contador(a) general, asistente contable, analista tributario y afines.
+      Enfócate en normas, experiencia y software contable.
+    </p>
+
+    <div class="two-column-layout">
+      <!-- FORMULARIO -->
+      <div class="form-panel">
+        <form id="form-contabilidad">
+          <h3 style="margin-bottom:0.8rem;">Datos principales</h3>
+
+          <div class="form-group">
+            <label for="nombre-contabilidad">Nombre completo</label>
+            <input type="text" id="nombre-contabilidad" name="nombre" placeholder="Ej: Carla Gómez Díaz" required>
+          </div>
+
+          <div class="form-group">
+            <label for="puesto-contabilidad">Puesto objetivo</label>
+            <input type="text" id="puesto-contabilidad" name="puesto" value="Contador(a) General" />
+            <div class="helper-text">Puedes ajustar: Asistente contable, Analista tributario, etc.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="ciudad-contabilidad">Ciudad y país</label>
+            <input type="text" id="ciudad-contabilidad" name="ciudad" placeholder="Ej: Chiclayo, Perú">
+          </div>
+
+          <div class="form-group">
+            <label for="email-contabilidad">Correo electrónico</label>
+            <input type="email" id="email-contabilidad" name="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono-contabilidad">Teléfono</label>
+            <input type="tel" id="telefono-contabilidad" name="telefono" placeholder="+51 999 999 999">
+          </div>
+
+          <hr style="margin:1rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+          <h3 style="margin-bottom:0.8rem;">Perfil y experiencia</h3>
+
+          <div class="form-group">
+            <label for="perfil-contabilidad">Perfil profesional (resumen)</label>
+            <textarea id="perfil-contabilidad" name="perfil" placeholder="Ej: Contador(a) con X años de experiencia en contabilidad general, NIIF, tributos y elaboración de estados financieros..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="experiencia-contabilidad">Experiencia contable</label>
+            <textarea id="experiencia-contabilidad" name="experiencia" placeholder="Describe tus puestos en estudios contables o empresas, responsabilidades (registros, conciliaciones, declaraciones, etc.)."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="areas-contabilidad">Áreas de especialización</label>
+            <textarea id="areas-contabilidad" name="areas" placeholder="Ej: Contabilidad general, tributación, costos, auditoría, planillas, tesorería."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="herramientas-contabilidad">Software y herramientas</label>
+            <textarea id="herramientas-contabilidad" name="herramientas" placeholder="Ej: Sistemas contables (CONCAR, SAP, etc.), Excel avanzado, SUNAT, plataformas de declaraciones."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="educacion-contabilidad">Educación</label>
+            <textarea id="educacion-contabilidad" name="educacion" placeholder="Carrera de Contabilidad, universidad, colegiatura, diplomados, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="certificaciones-contabilidad">Certificaciones (opcional)</label>
+            <textarea id="certificaciones-contabilidad" name="certificaciones" placeholder="Ej: Colegiado CPC, diplomados NIIF, especialización tributaria, etc."></textarea>
+          </div>
+
+          <button type="button" id="btn-generar-contabilidad" class="btn btn-primary">
+            Generar CV
+          </button>
+        </form>
+      </div>
+
+      <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
+      <div id="panel-cv-contabilidad" class="cv-panel">
+        <div class="cv-wrapper">
+          <div id="cv-contabilidad" class="cv">
+            <div class="cv-header">
+              <div class="cv-name" id="cv-nombre-contabilidad">Nombre Apellido</div>
+              <div class="cv-title" id="cv-puesto-contabilidad">Contador(a) General</div>
+              <div class="cv-contact" id="cv-contacto-contabilidad">
+                Ciudad, País | Teléfono | Email
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Perfil profesional</div>
+              <div class="cv-text cv-multiline" id="cv-perfil-contabilidad">
+                Resumen breve de tu experiencia en contabilidad, NIIF y tributación.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Experiencia contable</div>
+              <div class="cv-text cv-multiline" id="cv-experiencia-contabilidad">
+                Describe tus principales responsabilidades y tipos de empresas con las que has trabajado.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Áreas de especialización</div>
+              <div class="cv-text cv-multiline" id="cv-areas-contabilidad">
+                Contabilidad general, tributación, costos, auditoría, entre otros.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Software y herramientas</div>
+              <div class="cv-text cv-multiline" id="cv-herramientas-contabilidad">
+                Sistemas contables, ERPs, Excel avanzado y plataformas tributarias.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Educación</div>
+              <div class="cv-text cv-multiline" id="cv-educacion-contabilidad">
+                Tu formación académica principal.
+              </div>
+            </div>
+
+            <div class="cv-section" id="cv-certificaciones-section-contabilidad" style="display:none;">
+              <div class="cv-section-title">Certificaciones</div>
+              <div class="cv-text cv-multiline" id="cv-certificaciones-contabilidad"></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" id="btn-pdf-contabilidad" class="btn btn-secondary">
+            Descargar CV en PDF
+          </button>
+        </div>
+
+        <section class="recommendations">
+          <h3>Recomendaciones para conseguir el puesto más rápido</h3>
+          <div id="recomendaciones-contabilidad">
+            <ul>
+              <li>Aquí aparecerán recomendaciones personalizadas según lo que completes en el formulario.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/cv-contabilidad-general.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV para empresa avícola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">Generador de CV — Empresa avícola</div>
+    <a href="index.html" class="topbar-link">Volver al inicio</a>
+  </div>
+</header>
+
+<main class="content">
+  <section>
+    <h2>CV para empresa avícola</h2>
+    <p style="color:#4b5563; font-size:0.9rem;">
+      Pensado para puestos en granjas avícolas, plantas de proceso, producción de pollos o huevos,
+      calidad e inocuidad.
+    </p>
+
+    <div class="two-column-layout">
+      <!-- FORMULARIO -->
+      <div class="form-panel">
+        <form id="form-avicola">
+          <h3 style="margin-bottom:0.8rem;">Datos principales</h3>
+
+          <div class="form-group">
+            <label for="nombre-avicola">Nombre completo</label>
+            <input type="text" id="nombre-avicola" name="nombre" placeholder="Ej: Ana Rivas Flores" required>
+          </div>
+
+          <div class="form-group">
+            <label for="puesto-avicola">Puesto objetivo</label>
+            <input type="text" id="puesto-avicola" name="puesto" value="Puesto en empresa avícola" />
+            <div class="helper-text">Ej: Supervisor de granja, Jefe de producción, Responsable de calidad.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="ciudad-avicola">Ciudad y país</label>
+            <input type="text" id="ciudad-avicola" name="ciudad" placeholder="Ej: Lima, Perú">
+          </div>
+
+          <div class="form-group">
+            <label for="email-avicola">Correo electrónico</label>
+            <input type="email" id="email-avicola" name="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono-avicola">Teléfono</label>
+            <input type="tel" id="telefono-avicola" name="telefono" placeholder="+51 999 999 999">
+          </div>
+
+          <hr style="margin:1rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+          <h3 style="margin-bottom:0.8rem;">Perfil y experiencia</h3>
+
+          <div class="form-group">
+            <label for="perfil-avicola">Perfil profesional (resumen)</label>
+            <textarea id="perfil-avicola" name="perfil" placeholder="Ej: Profesional con experiencia en producción avícola, manejo de granjas, bioseguridad e indicadores productivos..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="experiencia-avicola">Experiencia en empresas avícolas</label>
+            <textarea id="experiencia-avicola" name="experiencia" placeholder="Describe tu experiencia en granjas, plantas de proceso, manejo de lotes, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="logros-avicola">Logros e indicadores</label>
+            <textarea id="logros-avicola" name="logros" placeholder="Ej: Mejora de conversión alimenticia, reducción de mortalidad, aumento de productividad, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="habilidades-avicola">Conocimientos y normas</label>
+            <textarea id="habilidades-avicola" name="habilidades" placeholder="Ej: Bioseguridad, bienestar animal, HACCP, BPM, manejo de vacunas, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="educacion-avicola">Educación / formación</label>
+            <textarea id="educacion-avicola" name="educacion" placeholder="Carreras afines (Medicina Veterinaria, Zootecnia, Ing. Zootecnista, etc.), cursos, diplomados."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="certificaciones-avicola">Certificaciones (opcional)</label>
+            <textarea id="certificaciones-avicola" name="certificaciones" placeholder="Ej: Certificaciones en inocuidad, HACCP, bienestar animal, etc."></textarea>
+          </div>
+
+          <button type="button" id="btn-generar-avicola" class="btn btn-primary">
+            Generar CV
+          </button>
+        </form>
+      </div>
+
+      <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
+      <div id="panel-cv-avicola" class="cv-panel">
+        <div class="cv-wrapper">
+          <div id="cv-avicola" class="cv">
+            <div class="cv-header">
+              <div class="cv-name" id="cv-nombre-avicola">Nombre Apellido</div>
+              <div class="cv-title" id="cv-puesto-avicola">Puesto en empresa avícola</div>
+              <div class="cv-contact" id="cv-contacto-avicola">
+                Ciudad, País | Teléfono | Email
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Perfil profesional</div>
+              <div class="cv-text cv-multiline" id="cv-perfil-avicola">
+                Resumen breve de tu experiencia en producción avícola y bioseguridad.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Experiencia avícola</div>
+              <div class="cv-text cv-multiline" id="cv-experiencia-avicola">
+                Describe tu experiencia en granjas, plantas de proceso y manejo de lotes.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Logros e indicadores</div>
+              <div class="cv-text cv-multiline" id="cv-logros-avicola">
+                Mejora de indicadores productivos y sanitarios.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Conocimientos y normas</div>
+              <div class="cv-text cv-multiline" id="cv-habilidades-avicola">
+                Bioseguridad, bienestar animal, HACCP, BPM, entre otros.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Educación / formación</div>
+              <div class="cv-text cv-multiline" id="cv-educacion-avicola">
+                Tu formación académica principal.
+              </div>
+            </div>
+
+            <div class="cv-section" id="cv-certificaciones-section-avicola" style="display:none;">
+              <div class="cv-section-title">Certificaciones</div>
+              <div class="cv-text cv-multiline" id="cv-certificaciones-avicola"></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" id="btn-pdf-avicola" class="btn btn-secondary">
+            Descargar CV en PDF
+          </button>
+        </div>
+
+        <section class="recommendations">
+          <h3>Recomendaciones para conseguir el puesto más rápido</h3>
+          <div id="recomendaciones-avicola">
+            <ul>
+              <li>Aquí aparecerán recomendaciones personalizadas según lo que completes en el formulario.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/cv-empresa-avicola.js"></script>
+</body>
+</html>

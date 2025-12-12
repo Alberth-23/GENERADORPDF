@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CV Ingeniero Industrial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-title">Generador de CV — Ingeniero Industrial</div>
+    <a href="index.html" class="topbar-link">Volver al inicio</a>
+  </div>
+</header>
+
+<main class="content">
+  <section>
+    <h2>CV para Ingeniero Industrial</h2>
+    <p style="color:#4b5563; font-size:0.9rem;">
+      Orientado a puestos en procesos, producción, logística, mejora continua y gestión de operaciones.
+      Completa la encuesta y genera tu CV listo para enviar.
+    </p>
+
+    <div class="two-column-layout">
+      <!-- FORMULARIO -->
+      <div class="form-panel">
+        <form id="form-ing-industrial">
+          <h3 style="margin-bottom:0.8rem;">Datos principales</h3>
+
+          <div class="form-group">
+            <label for="nombre-industrial">Nombre completo</label>
+            <input type="text" id="nombre-industrial" name="nombre" placeholder="Ej: María López Rodríguez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="puesto-industrial">Puesto objetivo</label>
+            <input type="text" id="puesto-industrial" name="puesto" value="Ingeniero Industrial" />
+            <div class="helper-text">Ej: Ingeniero de Procesos, Analista de Mejora Continua, Jefe de Producción.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="ciudad-industrial">Ciudad y país</label>
+            <input type="text" id="ciudad-industrial" name="ciudad" placeholder="Ej: Trujillo, Perú">
+          </div>
+
+          <div class="form-group">
+            <label for="email-industrial">Correo electrónico</label>
+            <input type="email" id="email-industrial" name="email" placeholder="tucorreo@ejemplo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono-industrial">Teléfono</label>
+            <input type="tel" id="telefono-industrial" name="telefono" placeholder="+51 999 999 999">
+          </div>
+
+          <hr style="margin:1rem 0; border:none; border-top:1px solid #e5e7eb;">
+
+          <h3 style="margin-bottom:0.8rem;">Perfil y experiencia</h3>
+
+          <div class="form-group">
+            <label for="perfil-industrial">Perfil profesional (resumen)</label>
+            <textarea id="perfil-industrial" name="perfil" placeholder="Ej: Ingeniero Industrial con X años de experiencia en mejora de procesos, reducción de costos y optimización de la producción..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="experiencia-industrial">Experiencia profesional</label>
+            <textarea id="experiencia-industrial" name="experiencia" placeholder="Describe tus puestos en plantas, logística, almacenes, producción, etc. Incluye responsabilidades y resultados."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="logros-industrial">Logros y mejora continua</label>
+            <textarea id="logros-industrial" name="logros" placeholder="Ej: Reducción de tiempos de ciclo, disminución de mermas, aumento de productividad, implementación de 5S, etc."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="herramientas-industrial">Herramientas y metodologías</label>
+            <textarea id="herramientas-industrial" name="herramientas" placeholder="Ej: Lean Manufacturing, Six Sigma, 5S, VSM, Kanban, Excel avanzado, SAP, ERP."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="educacion-industrial">Educación</label>
+            <textarea id="educacion-industrial" name="educacion" placeholder="Carrera, universidad, años, cursos relevantes (Lean, logística, etc.)."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="certificaciones-industrial">Certificaciones (opcional)</label>
+            <textarea id="certificaciones-industrial" name="certificaciones" placeholder="Ej: Lean Six Sigma Green Belt, diplomados en logística, gestión de la calidad, etc."></textarea>
+          </div>
+
+          <button type="button" id="btn-generar-industrial" class="btn btn-primary">
+            Generar CV
+          </button>
+        </form>
+      </div>
+
+      <!-- PREVISUALIZACIÓN DEL CV + RECOMENDACIONES -->
+      <div id="panel-cv-industrial" class="cv-panel">
+        <div class="cv-wrapper">
+          <div id="cv-ing-industrial" class="cv">
+            <div class="cv-header">
+              <div class="cv-name" id="cv-nombre-industrial">Nombre Apellido</div>
+              <div class="cv-title" id="cv-puesto-industrial">Ingeniero Industrial</div>
+              <div class="cv-contact" id="cv-contacto-industrial">
+                Ciudad, País | Teléfono | Email
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Perfil profesional</div>
+              <div class="cv-text cv-multiline" id="cv-perfil-industrial">
+                Resumen breve de tu experiencia en procesos, mejora continua y operaciones.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Experiencia profesional</div>
+              <div class="cv-text cv-multiline" id="cv-experiencia-industrial">
+                Describe aquí tus experiencias más relevantes en plantas, logística y operaciones.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Logros y mejora continua</div>
+              <div class="cv-text cv-multiline" id="cv-logros-industrial">
+                Proyectos de mejora, ahorro de costos, reducción de tiempos y aumento de productividad.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Herramientas y metodologías</div>
+              <div class="cv-text cv-multiline" id="cv-herramientas-industrial">
+                Lean, Six Sigma, 5S, VSM, ERPs, Excel avanzado, entre otras.
+              </div>
+            </div>
+
+            <div class="cv-section">
+              <div class="cv-section-title">Educación</div>
+              <div class="cv-text cv-multiline" id="cv-educacion-industrial">
+                Tu formación académica principal.
+              </div>
+            </div>
+
+            <div class="cv-section" id="cv-certificaciones-section-industrial" style="display:none;">
+              <div class="cv-section-title">Certificaciones</div>
+              <div class="cv-text cv-multiline" id="cv-certificaciones-industrial"></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" id="btn-pdf-industrial" class="btn btn-secondary">
+            Descargar CV en PDF
+          </button>
+        </div>
+
+        <section class="recommendations">
+          <h3>Recomendaciones para conseguir el puesto más rápido</h3>
+          <div id="recomendaciones-industrial">
+            <ul>
+              <li>Aquí aparecerán recomendaciones personalizadas según lo que completes en el formulario.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/cv-ing-industrial.js"></script>
+</body>
+</html>
